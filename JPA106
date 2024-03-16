@@ -1,0 +1,24 @@
+public class Main {
+    public static void main(String[] args) {
+        // 计算并输出 f(-3.2)
+        double result1 = calculateFunctionValue(-3.2);
+        System.out.printf("f(-3.2) = %.4f\n", result1);
+
+        // 计算并输出 f(-2.1)
+        double result2 = calculateFunctionValue(-2.1);
+        System.out.printf("f(-2.1) = %.4f\n", result2);
+
+        // 计算并输出 f(0)
+        double result3 = calculateFunctionValue(0);
+        System.out.printf("f(0.0) = %.4f\n", result3);
+
+        // 计算并输出 f(2.1)
+        double result4 = calculateFunctionValue(2.1);
+        System.out.printf("f(2.1) = %.4f\n", result4);
+    }
+
+    // 计算函数值的方法
+    public static double calculateFunctionValue(double x) {
+        return 3 * Math.pow(x, 3) + 2 * x - 1;
+    }
+}
