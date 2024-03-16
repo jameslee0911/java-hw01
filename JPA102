@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.println("Please input:");
+        double kg = scanner.nextDouble();
+        double ponds = kgToPounds(kg);
+        System.out.printf("%.1f kg = %.4f pounds\n", kg, ponds);
+    }
+
+    public static double kgToPounds(double kg) {
+        return kg * 2.20462;
+    }
+}
