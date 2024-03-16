@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+public class Main {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        // 步骤1：要求输入姓名
+        System.out.print("請輸入您的姓名：");
+        String name = scanner.nextLine();
+
+        // 步骤2：要求输入铜板个数
+        System.out.print("Hi，" + name + "，請輸人您的銅板的個數：");
+        int copperCoins = scanner.nextInt();
+
+        // 步骤3：依次要求输入不同面额硬币的数量
+        System.out.print("請輸入1元的數量：");
+        int coin1 = scanner.nextInt();
+        System.out.print("請輸入5元的數量：");
+        int coin5 = scanner.nextInt();
+        System.out.print("請輸入10元的數量：");
+        int coin10 = scanner.nextInt();
+        System.out.print("請輸入50元的數量：");
+        int coin50 = scanner.nextInt();
+
+        // 步骤4：计算总额
+        int total = copperCoins + coin1 + coin5 * 5 + coin10 * 10 + coin50 * 50;
+
+        // 输出结果
+        System.out.println("您的錢總共有：" + total + "元");
+    }
+}
