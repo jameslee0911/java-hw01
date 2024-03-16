@@ -1,0 +1,23 @@
+public class Main {
+    public static void main(String[] args) {
+        // 计算篮球成绩
+        int basketballGrade = Sports.calculateBasketballGrade(1, 2, 3);
+        System.out.println("The basketball grade is " + basketballGrade);
+
+        // 计算棒球成绩
+        int baseballGrade = Sports.calculateBaseballGrade(2, 3);
+        System.out.println("The baseball grade is " + baseballGrade);
+    }
+}
+
+class Sports {
+    // 计算篮球成绩的方法
+    public static int calculateBasketballGrade(int action, int skill, int teamgame) {
+        return action + skill + teamgame;
+    }
+
+    // 计算棒球成绩的方法
+    public static int calculateBaseballGrade(int skill, int teamgame) {
+        return 10 + skill + teamgame;
+    }
+}
